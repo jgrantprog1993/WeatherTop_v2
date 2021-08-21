@@ -12,7 +12,7 @@ const stationStore = {
     return this.store.findAll(this.collection);
   },
 
-  getStation(id) {
+  getStations(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
 
@@ -33,8 +33,8 @@ const stationStore = {
   },
 
   addReading(id, reading) {
-    const station = this.getStation(id);
-    station.readings.push(reading);
+    const station = this.getStations(id);
+    station.readings.push(reading)
     this.store.save();
   },
 
@@ -44,7 +44,7 @@ const stationStore = {
     _.remove(readings, { id: readingId});
     this.store.save();
   },
-  
+
   getUserStations(userid) {
     return this.store.findBy(this.collection, { userid: userid });
   },

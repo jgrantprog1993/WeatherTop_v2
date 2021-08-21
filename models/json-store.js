@@ -15,11 +15,7 @@ class JsonStore {
   }
 
   add(collection, obj) {
-    this.db
-      .get(collection)
-      .push(obj)
-      .last()
-      .value();
+    this.db.get(collection).push(obj).last().value();
   }
 
   remove(collection, obj) {

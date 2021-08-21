@@ -13,7 +13,7 @@ const stationAnalytics = {
     }
     return latestTemp;
   },
-  
+
   getPressure(station) {
     let latestPressure = null;
     if (station.readings.length > 0) {
@@ -24,8 +24,8 @@ const stationAnalytics = {
     }
     return latestPressure;
   },
-  };   
-      module.exports = stationAnalytics;
+};
+module.exports = stationAnalytics;
  
     
       
