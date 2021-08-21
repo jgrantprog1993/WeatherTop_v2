@@ -1,7 +1,7 @@
 {
   "stationCollection": [
-      {
-      "ID": "01",
+    {
+      "id": "01",
       "name": "Tramore",
       "readings": [
         {
@@ -9,26 +9,36 @@
           "code": "800",
           "temperature": 0.5,
           "windSpeed": 2,
-          "pressure": 1002
+          "pressure": 1002,
+          "windDirection": 90
         },
         {
           "id": "03",
           "code": "600",
           "temperature": 6,
           "windSpeed": 2,
-          "pressure": 1004
+          "pressure": 1004,
+          "windDirection": 96
         },
         {
           "id": "04",
           "code": "700",
           "temperature": 8,
           "windSpeed": 4,
-          "pressure": 1004
+          "pressure": 1004,
+          "windDirection": 101
         }
-      ]
-      },
+      ],
+      "latestWeatherCode": "Thunder",
+      "latestTemp": 8,
+      "latestTempF": 46.4,
+      "latestWindReading": "1 bft",
+      "latestWindDirection": "E",
+      "latestWindChill": "7.85819",
+      "latestPressure": 1004
+    },
     {
-      "ID": "05",
+      "id": "05",
       "name": "Dunmore",
       "readings": [
         {
@@ -36,18 +46,38 @@
           "code": "700",
           "temperature": 8,
           "windSpeed": 1,
-          "pressure": 999
+          "pressure": 999,
+          "windDirection": 98
         },
         {
           "id": "07",
           "code": "200",
           "temperature": 0.5,
           "windSpeed": 3.5,
-          "pressure": 1000
+          "pressure": 1000,
+          "windDirection": 102
+        },
+        {
+          "id": "dcf27270-02b7-11ec-9375-b95dcfb844fb",
+          "code": "100",
+          "temperature": "10",
+          "windSpeed": "10",
+          "windDirection": "10",
+          "pressure": "1000"
         }
-      ]
-
+      ],
+      "latestWeatherCode": "Partial Clouds",
+      "latestTemp": 0.5,
+      "latestTempF": 32.9,
+      "latestWindReading": "1 bft",
+      "latestWindDirection": "ESE",
+      "latestWindChill": "-0.22049",
+      "latestPressure": 1000
+    },
+    {
+      "id": "d91b2fe0-02b0-11ec-a329-258ea10882df",
+      "name": "zsdfg",
+      "readings": []
     }
   ]
 }
-    

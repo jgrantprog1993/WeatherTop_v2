@@ -2,46 +2,50 @@
 
     <div class="black card">
         <div class="content">
-        <a class="header">{{name}}</a>
-        <div class="description"></div>
+            <a class="header">{{station.name}}</a>
+            <div class="description"></div>
         </div>
     </div>
 
     <div class="black card">
         <div class="content">
-        <a class="header">Weather</a>
-        <div class="description">
-            <p> {{latestWeatherCode}}   </p>
-        </div>
-        </div>
-    </div>
-
-    <div class="black card">
-        <div class="content">
-        <a class="header">Temperature</a>
-        <div class="description">
-            <p>{{latestTemp}}  C</p>
-            <p>{{latestTempF}}  F</p>
-        </div>
+            <a class="header">Weather</a>
+            <div class="description">
+                <p> {{station.latestWeatherCode}}   </p>
+            </div>
         </div>
     </div>
 
     <div class="black card">
         <div class="content">
-        <a class="header">Wind Speed</a>
-        <div class="description">
-            <p> {{latestWindReading}} </p>
+            <a class="header">Temperature</a>
+            <div class="description">
+                <p>{{station.latestTemp}}  C</p>
+                <p>{{station.latestTempF}}  F</p>
+            </div>
         </div>
+    </div>
+
+    <div class="black card">
+        <div class="content">
+            <a class="header">Wind</a>
+            <div class="description">
+                <p> {{station.latestWindReading}} </p>
+                <p> Direction: {{station.latestWindDirection}} </p>
+                <p> Feels Like: {{station.latestWindChill}} </p>
+            </div>
         </div>
     </div>
 
 
     <div class="black card">
         <div class="content">
-        <a class="header">Pressure</a>
-        <div class="description">
-            <p>{{latestPressure}} hpa</p>
-        </div>
+            <a class="header">Pressure</a>
+            <div class="description">
+                <p>{{station.latestPressure}} hpa</p>
+            </div>
         </div>
     </div>
+
 </div>
+
