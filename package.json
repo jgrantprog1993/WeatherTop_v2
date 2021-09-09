@@ -16,7 +16,8 @@
     "lodash": "^4.17.21",
     "lowdb": "^1.0.0",
     "uuid": "^8.3.2",
-    "winston": "^3.3.3"
+    "winston": "^3.3.3",
+    "axios": "^0.21.4"
   },
   "repository": {
     "url": "https://github.com/wit-hdip-comp-sci-2021/glitch-template"

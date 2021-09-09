@@ -1,17 +1,22 @@
-
 <table class="ui table">
     <thead>
     <tr>
+        <th>Date/Time</th>
         <th>Code</th>
         <th>Temperature</th>
         <th>Wind Speed</th>
         <th>Wind Direction</th>
         <th>Pressure</th>
+        <th></th>
+
     </tr>
     </thead>
     <tbody>
     {{#each station.readings}}
         <tr>
+            <td>
+                {{date}}
+            </td>
             <td>
                 {{code}}
             </td>
@@ -27,7 +32,13 @@
             <td>
                 {{pressure}}
             </td>
+            <td>
+                <a href="/station/{{../station.id}}/deletereading/{{id}}" class="ui tiny red button">Delete Reading</a>
+            </td>
     {{/each}}
+
     </tr>
+
     </tbody>
 </table>
+

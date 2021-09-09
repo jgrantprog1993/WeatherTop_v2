@@ -2,14 +2,11 @@
 
 const stationComps = {
 
-    getLatestReading(station)
-    {
+    getLatestReading(station) {
         let latestReading = null;
-        if (station.readings.length > 0)
-        {
+        if (station.readings.length > 0) {
             latestReading = station.readings[0];
-            for (let i = 1; i < station.readings.length; i++)
-            {
+            for (let i = 1; i < station.readings.length; i++) {
                 latestReading = station.readings[i];
             }
         }

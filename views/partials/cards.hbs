@@ -1,38 +1,53 @@
 <div class="ui inverted five stackable cards">
-
     <div class="black card">
         <div class="content">
+            <i class="ui right floated fitted inverted purple primary huge map marker icon"></i>
             <a class="header">{{station.name}}</a>
-            <div class="description"></div>
+            <div class="description">
+                <p> LAT: {{lat}}   </p>
+                <p> LNG: {{lng}}   </p>
+            </div>
         </div>
     </div>
 
     <div class="black card">
         <div class="content">
+            <i class="{{weatherIcon}}"></i>
             <a class="header">Weather</a>
             <div class="description">
-                <p> {{station.latestWeatherCode}}   </p>
+                <p> {{latestWeatherCode}}   </p>
             </div>
         </div>
     </div>
 
     <div class="black card">
         <div class="content">
+            <i class="{{tempIcon}}"></i>
             <a class="header">Temperature</a>
             <div class="description">
-                <p>{{station.latestTemp}}  C</p>
-                <p>{{station.latestTempF}}  F</p>
+                <p>{{latestTemp}}  C</p>
+                <p>{{latestTempF}}  F</p>
+
+                <div class="right floated meta"><i class="{{tempTrend}}"></i></div>
+
+                <p>Max: {{maxTemp}}  C </p>
+                <p>Min: {{minTemp}}  C </p>
             </div>
         </div>
     </div>
 
     <div class="black card">
         <div class="content">
+            <i class="{{windIcon}}"></i>
             <a class="header">Wind</a>
             <div class="description">
-                <p> {{station.latestWindReading}} </p>
-                <p> Direction: {{station.latestWindDirection}} </p>
-                <p> Feels Like: {{station.latestWindChill}} </p>
+                <p> {{latestWindReading}} BFT </p>
+                <p> Direction: {{latestWindDirection}} </p>
+                <p> Feels Like: {{latestWindChill}} </p>
+                <div class="right floated meta"><i class="{{windTrend}}"></i></div>
+
+                <p>Max: {{maxWind}}   </p>
+                <p>Min: {{minWind}}   </p>
             </div>
         </div>
     </div>
@@ -40,12 +55,16 @@
 
     <div class="black card">
         <div class="content">
+            <i class="{{pressureIcon}}"></i>
             <a class="header">Pressure</a>
             <div class="description">
-                <p>{{station.latestPressure}} hpa</p>
+                <p>{{latestPressure}} hpa</p>
+                <div class="right floated meta"><i class="{{pressureTrend}}"></i></div>
+
+                <p>Max: {{maxPressure}}   </p>
+                <p>Min: {{minPressure}}   </p>
             </div>
         </div>
     </div>
 
 </div>
-
