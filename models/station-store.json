@@ -1,83 +1,205 @@
 {
   "stationCollection": [
     {
-      "id": "01",
-      "name": "Tramore",
+      "id": "df135870-0c40-11ec-ba99-bf7c4c1c726d",
+      "userId": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Tranmore",
+      "lat": "52.16",
+      "lng": "-7.152",
       "readings": [
         {
-          "id": "02",
-          "code": "800",
-          "temperature": 0.5,
-          "windSpeed": 2,
-          "pressure": 1002,
-          "windDirection": 90
-        },
-        {
-          "id": "03",
-          "code": "600",
-          "temperature": 6,
-          "windSpeed": 2,
-          "pressure": 1004,
-          "windDirection": 96
-        },
-        {
-          "id": "04",
-          "code": "700",
-          "temperature": 8,
-          "windSpeed": 4,
-          "pressure": 1004,
-          "windDirection": 101
+          "id": "61b83b20-0f65-11ec-955b-7d2732ed8131",
+          "code": 801,
+          "temperature": 14.38,
+          "windSpeed": 0.45,
+          "pressure": 1021,
+          "windDirection": 56,
+          "date": "2021-09-06T22:54:24.232Z"
         }
       ],
-      "latestWeatherCode": "Thunder",
-      "latestTemp": 8,
-      "latestTempF": 46.4,
-      "latestWindReading": "1 bft",
-      "latestWindDirection": "E",
-      "latestWindChill": "7.85819",
-      "latestPressure": 1004
+      "latestTemp": 14.38,
+      "latestTempF": 14.38,
+      "latestWindReading": "",
+      "latestWindDirection": "NE",
+      "latestWindChill": "17.06868",
+      "latestPressure": 1021,
+      "maxTemp": 14.38,
+      "minTemp": 14.38,
+      "maxWind": 0.45,
+      "minWind": 0.45,
+      "maxPressure": 1021,
+      "minPressure": 1021,
+      "weatherIcon": "Varied",
+      "tempIcon": "ui right floated fitted inverted huge blue snowflake outline icon",
+      "windIcon": "Unknown",
+      "pressureIcon": "ui right floated fitted inverted primary huge red dumbbell icon",
+      "tempTrend": "",
+      "windTrend": "",
+      "pressureTrend": ""
     },
     {
-      "id": "05",
-      "name": "Dunmore",
+      "id": "cfb6d670-0f71-11ec-8a76-9fe0403116bf",
+      "userId": "c6941f80-0f71-11ec-8a76-9fe0403116bf",
+      "name": "Test",
+      "lat": "1",
+      "lng": "1",
       "readings": [
         {
-          "id": "06",
-          "code": "700",
-          "temperature": 8,
-          "windSpeed": 1,
-          "pressure": 999,
-          "windDirection": 98
+          "id": "d3f25d40-0f71-11ec-8a76-9fe0403116bf",
+          "code": 802,
+          "temperature": 25.4,
+          "windSpeed": 5.15,
+          "pressure": 1014,
+          "windDirection": 205,
+          "date": "2021-09-07T00:23:29.661Z"
         },
         {
-          "id": "07",
-          "code": "200",
-          "temperature": 0.5,
-          "windSpeed": 3.5,
-          "pressure": 1000,
-          "windDirection": 102
-        },
+          "id": "e1bd1870-0f71-11ec-8a76-9fe0403116bf",
+          "code": 802,
+          "temperature": 25.4,
+          "windSpeed": 5.15,
+          "pressure": 1014,
+          "windDirection": 205,
+          "date": "2021-09-07T00:23:53.405Z"
+        }
+      ],
+      "latestTemp": 25.4,
+      "latestTempF": 25.4,
+      "latestWindReading": "",
+      "latestWindDirection": "SSW",
+      "latestWindChill": "27.21774",
+      "latestPressure": 1014,
+      "maxTemp": 25.4,
+      "minTemp": 25.4,
+      "maxWind": 5.15,
+      "minWind": 5.15,
+      "maxPressure": 1014,
+      "minPressure": 1014,
+      "weatherIcon": "Varied",
+      "tempIcon": "ui right floated fitted inverted huge blue snowflake outline icon",
+      "windIcon": "Unknown",
+      "pressureIcon": "ui right floated fitted inverted primary huge red dumbbell icon",
+      "tempTrend": "",
+      "windTrend": "",
+      "pressureTrend": ""
+    },
+    {
+      "id": "de814f30-11b2-11ec-9629-8fef2867559f",
+      "userId": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Ardmore ",
+      "lat": "51.9515",
+      "lng": "-7.722036",
+      "readings": [
         {
-          "id": "dcf27270-02b7-11ec-9375-b95dcfb844fb",
+          "id": "39dce9c0-11b3-11ec-9629-8fef2867559f",
           "code": "100",
-          "temperature": "10",
-          "windSpeed": "10",
-          "windDirection": "10",
-          "pressure": "1000"
+          "temperature": "1",
+          "windSpeed": "1",
+          "windDirection": "1",
+          "pressure": "1005",
+          "date": "2021-09-09T21:16:40.924Z"
+        },
+        {
+          "id": "4263d5e0-11b3-11ec-9629-8fef2867559f",
+          "code": "200",
+          "temperature": "2",
+          "windSpeed": "1",
+          "windDirection": "100",
+          "pressure": "1004",
+          "date": "2021-09-09T21:16:55.230Z"
+        },
+        {
+          "id": "4a2e76e0-11b3-11ec-9629-8fef2867559f",
+          "code": "300",
+          "temperature": "3",
+          "windSpeed": "1",
+          "windDirection": "1",
+          "pressure": "1003",
+          "date": "2021-09-09T21:17:08.302Z"
+        },
+        {
+          "id": "611afea0-11b3-11ec-9629-8fef2867559f",
+          "code": "100",
+          "temperature": "0",
+          "windSpeed": "2",
+          "windDirection": "0",
+          "pressure": "1005",
+          "date": "2021-09-09T21:17:46.762Z"
+        },
+        {
+          "id": "6d5d1e00-11b3-11ec-9629-8fef2867559f",
+          "code": 804,
+          "temperature": 16.89,
+          "windSpeed": 2.59,
+          "pressure": 1005,
+          "windDirection": 289,
+          "date": "2021-09-09T21:18:06.887Z"
+        },
+        {
+          "id": "c581d3b0-11b7-11ec-9629-8fef2867559f",
+          "code": "300",
+          "temperature": "1",
+          "windSpeed": "3",
+          "windDirection": "1",
+          "pressure": "1000",
+          "date": "2021-09-09T21:49:13.195Z"
+        },
+        {
+          "id": "db858210-11b7-11ec-9629-8fef2867559f",
+          "code": "800",
+          "temperature": "2",
+          "windSpeed": "2",
+          "windDirection": "0",
+          "pressure": "999",
+          "date": "2021-09-09T21:49:50.129Z"
+        },
+        {
+          "id": "207c1460-11b8-11ec-9629-8fef2867559f",
+          "code": "500",
+          "temperature": "3",
+          "windSpeed": "1",
+          "windDirection": "0",
+          "pressure": "999",
+          "date": "2021-09-09T21:51:45.830Z"
+        },
+        {
+          "id": "29433dd0-11b8-11ec-9629-8fef2867559f",
+          "code": 804,
+          "temperature": 16.73,
+          "windSpeed": 3.23,
+          "pressure": 1005,
+          "windDirection": 292,
+          "date": "2021-09-09T21:52:00.229Z"
+        },
+        {
+          "id": "5aed5280-11b8-11ec-9629-8fef2867559f",
+          "code": 804,
+          "temperature": 16.73,
+          "windSpeed": 3.23,
+          "pressure": 1005,
+          "windDirection": 292,
+          "date": "2021-09-09T21:53:23.491Z"
         }
       ],
-      "latestWeatherCode": "Partial Clouds",
-      "latestTemp": 0.5,
-      "latestTempF": 32.9,
-      "latestWindReading": "1 bft",
-      "latestWindDirection": "ESE",
-      "latestWindChill": "-0.22049",
-      "latestPressure": 1000
-    },
-    {
-      "id": "d91b2fe0-02b0-11ec-a329-258ea10882df",
-      "name": "zsdfg",
-      "readings": []
+      "latestTemp": 16.73,
+      "latestTempF": 62.114,
+      "latestWindReading": 1,
+      "latestWindDirection": "WNW",
+      "latestWindChill": "17.80376",
+      "latestPressure": 1005,
+      "maxTemp": 16.89,
+      "minTemp": 0,
+      "maxWind": 3.23,
+      "minWind": 1,
+      "maxPressure": 1005,
+      "minPressure": 999,
+      "weatherIcon": "Varied",
+      "tempIcon": "ui right floated fitted inverted huge inverted yellow temperature high icon",
+      "windIcon": "ui right floated fitted inverted blue small wind icon",
+      "pressureIcon": "ui right floated fitted inverted primary huge orange dumbbell icon",
+      "tempTrend": "right floated big arrow up icon",
+      "windTrend": "",
+      "pressureTrend": ""
     }
   ]
 }

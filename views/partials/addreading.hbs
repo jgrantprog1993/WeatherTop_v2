@@ -3,29 +3,38 @@
 
         <div class="field">
             <label>Code</label>
-            <input placeholder="Code" type="number" name="code">
+            <select placeholder="X00" type="number" name="code">
+                <!--https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_select_form!-->
+                <option value="100">100 - Clear</option>
+                <option value="200">200 - Partial Clouds</option>
+                <option value="300">300 - Cloudy</option>
+                <option value="400">400 - LightShowers</option>
+                <option value="500">500 - Heavy Rain</option>
+                <option value="600">600 - Rain</option>
+                <option value="700">700 - Snow</option>
+                <option value="800">800 - Thunder</option>
+                <option value="900">900 - Varied</option>
+            </select>
         </div>
 
         <div class="field">
             <label>Temp</label>
-            <input placeholder="Temp" type="number" name="temperature">
+            <input placeholder="00.00 C" type="number" step=".01" name="temperature">
         </div>
-
         <div class="field">
-            <label>WindSpeed</label>
-            <input placeholder="W'Speed" type="number" name="windSpeed">
+            <label>Wind Speed</label>
+            <input placeholder="00.00 kM/h" type="number" step=".01" min="1" max="117" name="windSpeed">
         </div>
-
         <div class="field">
             <label>Wind Direction</label>
-            <input placeholder="w'Direction" type="number" name="windDirection">
+            <input placeholder="00.00 deg" type="number" step=".01" min="0" max="360" name="windDirection">
         </div>
-
         <div class="field">
             <label>Pressure</label>
-            <input placeholder="Press" type="number" name="pressure">
+            <input placeholder="000 hPa" type="number" step=".1" min="900" max="1100" name="pressure">
         </div>
 
     </div>
     <button class="ui blue submit button">Add Reading</button>
 </form>
+

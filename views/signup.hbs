@@ -1,0 +1,32 @@
+{{> welcomemenu id="signup"}}
+<div class="ui two column grid basic middle aligned segment">
+    <div class="column">
+        <img class="ui large image" src="https://cdn.glitch.com/fbaeed56-6cf5-40dc-b8c3-808eaf2c9e7b%2Fweather2.jpg?v=1630967204055">
+    </div>
+    <div class="column">
+        <form class="ui stacked segment form" action="/register" method="POST">
+            <h3 class="ui header">Register</h3>
+            <div class="two fields">
+                <div class="field">
+                    <label>First Name</label>
+                    <input placeholder="First Name" type="text" name="firstname">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input placeholder="Last Name" type="text" name="lastname">
+                </div>
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input placeholder="Email" type="text" name="email">
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" name="password">
+            </div>
+            <button class="ui blue submit button">Submit</button>
+        </form>
+    </div>
+
+</div>
+{{> footer}}

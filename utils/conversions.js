@@ -4,17 +4,13 @@ const logger = require("../utils/logger");
 const stationComps = require('../utils/stationComps');
 
 const conversions = {
-
-    getWeatherCode(station)
-    {
+    getWeatherCode(station) {
         let weatherCodeTxt = "";
         let weatherCodeNum = null;
 
-        if (station.readings.length > 0)
-        {
+        if (station.readings.length > 0) {
             weatherCodeNum = station.readings[0].code;
-            for (let i = 0; i < station.readings.length; i++)
-            {
+            for (let i = 0; i < station.readings.length; i++) {
                 weatherCodeNum = station.readings[i].code;
             }
             let weatherHM = new Map();
@@ -25,7 +21,8 @@ const conversions = {
             weatherHM.set(500, "Heavy Showers");
             weatherHM.set(600, "Rain");
             weatherHM.set(700, "Snow");
-            weatherHM.set(700, "Thunder");
+            weatherHM.set(800, "Thunder");
+            weatherHM.set(900, "Varied");
             // console.log("results of HM -" + weatherHM.get(Number(weatherCodeNum))); //https://gomakethings.com/converting-strings-to-numbers-with-vanilla-javascript
 
             weatherCodeTxt = weatherHM.get(Number(weatherCodeNum));             //https://medium.com/@martin.crabtree/javascript-tracking-key-value-pairs-using-hashmaps-7de6df598257
@@ -43,7 +40,7 @@ const conversions = {
                 TempF = station.readings[i].temperature * 9 / 5 + 32;
             }
         }
-        return TempF ;
+        return TempF;
     },
 
     getWindReading(station) {
@@ -56,30 +53,30 @@ const conversions = {
                 windReading = station.readings[i].windSpeed;
 
 
-                if(windReading <= 1 ) {
-                    bft = "0 bft";
+                if (windReading <= 1) {
+                    bft = 0;
                 } else if (windReading > 1 && windReading <= 5) {
-                    bft = "1 bft";
+                    bft = 1;
                 } else if (windReading >= 6 && windReading <= 11) {
-                    bft = "2 bft";
+                    bft = 2;
                 } else if (windReading >= 12 && windReading <= 19) {
-                    bft = "3 bft";
+                    bft = 3;
                 } else if (windReading >= 20 && windReading <= 28) {
-                    bft = "4 bft";
+                    bft = 4;
                 } else if (windReading >= 29 && windReading <= 38) {
-                    bft = "5 bft";
+                    bft = 5;
                 } else if (windReading >= 39 && windReading <= 49) {
-                    bft = "6 bft";
+                    bft = 6;
                 } else if (windReading >= 50 && windReading <= 11) {
-                    bft = "7 bft";
+                    bft = 7;
                 } else if (windReading >= 62 && windReading <= 74) {
-                    bft = "8 bft";
+                    bft = 8;
                 } else if (windReading >= 75 && windReading <= 88) {
-                    bft = "9 bft";
+                    bft = 9;
                 } else if (windReading >= 89 && windReading <= 102) {
-                    bft = "10 bft";
+                    bft = 10;
                 } else if (windReading >= 103 && windReading <= 117) {
-                    bft = "11 bft";
+                    bft = 11;
                 }
             }
             return bft;
@@ -87,12 +84,10 @@ const conversions = {
     },
 
 
-    getWindDirectionTxt(windDirection)
-    {
+    getWindDirectionTxt(windDirection) {
         var windDirectionTxt = "";
 
-        if ((windDirection <= 11.25 && windDirection > 0) ||  (windDirection > 348.75 && windDirection <= 360))
-        {
+        if ((windDirection <= 11.25 && windDirection > 0) || (windDirection > 348.75 && windDirection <= 360)) {
             windDirectionTxt = "N";
         } else if (windDirection > 11.25 && windDirection <= 33.75) {
             windDirectionTxt = "NNE";
@@ -124,23 +119,20 @@ const conversions = {
             windDirectionTxt = "NW";
         } else if (windDirection > 326.25 && windDirection <= 348.75) {
             windDirectionTxt = "NNW";
-        }
-        else{
+        } else {
             windDirectionTxt = "Invalid Direction";
         }
-        //console.log("windDirectionTxt = " + windDirectionTxt );
+
         return windDirectionTxt;
     },
 
-    getWindChillCalc(tempC, windKmpHr)
-    {
-        var mid1 = Math.pow(windKmpHr, 0.16);
-        //console.log(mid1);
-        var windChillCalc = 13.12 + (0.6215*tempC) - (11.37*(mid1)) + ((0.3965*tempC)*(mid1));
-        var windChill_5Ddps = windChillCalc.toFixed(5);                                            ///https://www.w3schools.com/jsref/jsref_tofixed.asp
-        console.log("wINDcHILE = " + windChill_5Ddps);
+    getWindChillCalc(tempC, windKmpHr) {
+        var windChillCalc1 = Math.pow(windKmpHr, 0.16);
 
-        return windChill_5Ddps;
+        var windChillCalc2 = 13.12 + (0.6215 * tempC) - (11.37 * (windChillCalc1)) + ((0.3965 * tempC) * (windChillCalc1));
+        var windChill_5Ddps = windChillCalc2.toFixed(5);                                            ///https://www.w3schools.com/jsref/jsref_tofixed.asp
+
+        return (windChill_5Ddps);
 
     }
 
